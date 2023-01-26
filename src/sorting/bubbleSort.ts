@@ -1,3 +1,9 @@
+/*
+ * Bubble Sort
+ *
+ * Efficiency is O(n^2)
+ *
+ */
 export function bubbleSort(array: number[]): number[] {
   let unsortedUntilIndex = array.length - 1;
   let performedSwaps = true;

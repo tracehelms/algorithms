@@ -1,4 +1,7 @@
-export const intersectionWithHashTable = (a: number[], b: number[]): number[] => {
+export const intersectionWithHashTable = (
+  a: number[],
+  b: number[]
+): number[] => {
   const result: number[] = [];
   const hash: Map<number, boolean> = new Map();
 

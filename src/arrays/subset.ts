@@ -12,7 +12,7 @@ export const isSubsetWithHashTable = (a: number[], b: number[]): boolean => {
 
   const hash: Map<number, boolean> = new Map();
 
-  largerArray.forEach(v => hash.set(v, true));
+  largerArray.forEach((v) => hash.set(v, true));
 
   for (let i = 0; i < smallerArray.length; i++) {
     if (!hash.has(smallerArray[i])) {
@@ -21,4 +21,4 @@ export const isSubsetWithHashTable = (a: number[], b: number[]): boolean => {
   }
 
   return true;
-}
+};

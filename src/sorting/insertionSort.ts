@@ -1,12 +1,12 @@
 /*
  * Insertion Sort
  *
- * Efficiency depends on the array to be sorted. 
+ * Efficiency depends on the array to be sorted.
  *   - For the best case, it's O(n). Minimal comparisons and no shifts.
  *   - For the average case, it's O(n^2 / 2). Some comparisons and shifts.
  *   - For the worst case, it's O(n^2). Lots of comparisons and shifts.
  *
- * This makes it sometimes much better than Selection Sort and sometimes as 
+ * This makes it sometimes much better than Selection Sort and sometimes as
  * bad as Bubble Sort.
  *
  */

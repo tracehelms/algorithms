@@ -14,7 +14,7 @@ export const fibonacci = (n: number): number => {
   }
 
   return fibonacci(n - 2) + fibonacci(n - 1);
-}
+};
 
 /*
  * Memoized Fibonacci Sequence
@@ -26,7 +26,10 @@ export const fibonacci = (n: number): number => {
  * The efficiency of this algorithm is O(n), much faster.
  *
  */
-export const memoizedFibonacci = (n: number, memo: Map<number, number> = new Map()): number => {
+export const memoizedFibonacci = (
+  n: number,
+  memo: Map<number, number> = new Map()
+): number => {
   if (n < 2) {
     return n;
   }
@@ -36,7 +39,7 @@ export const memoizedFibonacci = (n: number, memo: Map<number, number> = new Map
   }
 
   return memo.get(n) || 0;
-}
+};
 
 /*
  * Bottom Up Fibonacci Sequence
@@ -61,4 +64,4 @@ export const bottomUpFibonacci = (n: number): number => {
   }
 
   return last;
-}
+};

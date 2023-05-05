@@ -12,12 +12,12 @@ export function bubbleSort(array: number[]): number[] {
     performedSwaps = false;
 
     for (let i = 0; i < unsortedUntilIndex; i++) {
-      if (array[i] > array[i+1]) {
+      if (array[i] > array[i + 1]) {
         const thisVal = array[i];
-        const nextVal = array[i+1];
+        const nextVal = array[i + 1];
 
         array[i] = nextVal;
-        array[i+1] = thisVal;
+        array[i + 1] = thisVal;
         performedSwaps = true;
       }
     }

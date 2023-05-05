@@ -4,4 +4,4 @@ export const factorial = (x: number): number => {
   }
 
   return x * factorial(x - 1);
-}
+};

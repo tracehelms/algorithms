@@ -1,6 +1,6 @@
 import BinarySearchTree from "../BinarySearchTree";
 
-describe("LinkedList", function () {
+describe("BinarySearchTree", function () {
   test("it can be created", function () {
     const tree = new BinarySearchTree();
     expect(tree).not.toBeUndefined();

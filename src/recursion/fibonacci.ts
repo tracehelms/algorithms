@@ -35,7 +35,13 @@ export const memoizedFibonacci = (
   }
 
   if (!memo.get(n)) {
-    memo.set(n, memoizedFibonacci(n - 2) + memoizedFibonacci(n - 1));
+    const fib2 = memoizedFibonacci(n - 2, memo);
+    memo.set(n - 2, fib2);
+
+    const fib1 = memoizedFibonacci(n - 1, memo);
+    memo.set(n - 1, fib1);
+
+    memo.set(n, fib2 + fib1);
   }
 
   return memo.get(n) || 0;
